@@ -82,6 +82,7 @@ The vision for TaskNotate is to keep growing. Planned features include:
 1.  **Clone the Repository**:
     ```bash
     git clone https://github.com/Ahmaddoolt/tasknotate.git
+    cd tasknotate
     ```
 2.  **Install Dependencies**:
     ```bash
