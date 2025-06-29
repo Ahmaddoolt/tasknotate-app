@@ -89,13 +89,13 @@
 
 TaskNotate integrates precise local alarms with a custom native Android UI for a seamless and reliable reminder experience. The system is designed to wake the device and show a full-screen alert, ensuring you never miss an important task.
 
-```mermaid
 graph TD
-    A["Alarm Plugin"] --> B["Kotlin Handler"]
-    B --> C["MethodChannel"]
-    C --> D["Flutter AlarmService"]
-    D --> E["Alarm State Controller"]
-    E --> F["Alarm UI Screen"]
+    A[Alarm Plugin] --> B[Kotlin Handler]
+    B --> C[MethodChannel]
+    C --> D[Flutter AlarmService]
+    D --> E[Alarm State Controller]
+    E --> F[Alarm UI Screen]
+
 
 ### 📌 Key Features
 - 🔓 Wakes the device and shows the alarm over the lock screen.
