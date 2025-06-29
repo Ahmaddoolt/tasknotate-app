@@ -95,16 +95,20 @@ graph TD
     D --> E[Alarm State Controller]
     E --> F[Alarm UI Screen]
 
-📌 Key Features
-🔓 Wakes the device and shows the alarm over the lock screen.
-🔄 Reliably triggers alarms even after the device reboots.
-🔕 Supports both manual and automatic dismissal.
-📡 Built on top of the powerful flutter_local_notifications package.
+### 📌 Key Features
+- 🔓 Wakes the device and shows the alarm over the lock screen.
+- 🔄 Reliably triggers alarms even after the device reboots.
+- 🔕 Supports both manual and automatic dismissal.
+- 📡 Built on top of the powerful `flutter_local_notifications` package.
 
-🧩 Sample Code
-📱 Native Android (Kotlin)
+---
+
+## 🧩 Sample Code
+
+### 📱 Native Android (Kotlin)
 This code ensures the alarm screen appears even when the device is locked.
 
+```kotlin
 // In MainActivity.kt or a dedicated AlarmActivity.kt
 override fun onCreate(savedInstanceState: Bundle?) {
     // Check if the activity was launched by an alarm trigger
@@ -124,9 +128,10 @@ override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 }
 
-🔁 Flutter Integration
+### 🔁 Flutter Integration
 This is how Flutter listens for and handles the alarm event.
 
+```dart
 // Part of the alarm handling service in Flutter
 void _handleAlarmTrigger(AlarmSettings settings) async {
   // Notify the app that an alarm screen is active
@@ -145,18 +150,34 @@ Future<void> stopAlarm(int alarmId) async {
   await AlarmDisplayStateService.to.setAlarmScreenActive(false);
 }
 
-🧪 Try It Out
-Clone the repository
-git clone https://github.com/MegoABKM/TaskNotate.git
+---
 
-Navigate into the project directory
-cd TaskNotate
+## 🧪 Try It Out
 
-Install dependencies and run the app
-flutter pub get
-flutter run
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/MegoABKM/TaskNotate.git
+    ```
 
-❤️ Support & License
-<img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
-Built with love using Flutter 💙
+2.  **Navigate into the project directory**
+    ```bash
+    cd TaskNotate
+    ```
 
+3.  **Install dependencies and run the app**
+    ```bash
+    flutter pub get
+    flutter run
+    ```
+
+---
+
+## ❤️ Support & License
+
+<div align="center">
+  <a href="https://github.com/MegoABKM/TaskNotate/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge"></a>
+  <a href="https://github.com/MegoABKM/TaskNotate/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge"></a>
+</div>
+
+> Built with love using Flutter 💙  
+> Contributions, issues, and feature requests are welcome!
