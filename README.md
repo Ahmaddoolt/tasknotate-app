@@ -1,94 +1,162 @@
-# TaskNotate 📋✨
-
-Welcome to **TaskNotate**, a beautifully crafted Flutter app designed to supercharge your productivity! Built with Dart and powered by a local SQLite database, this app brings your tasks and notes to life with a stunning UI, full offline functionality, and a host of customizable features.
-
-Whether you're managing complex projects or jotting down quick thoughts, TaskNotate is your ultimate personal productivity companion!
-
-[![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?style=for-the-badge&logo=flutter)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-2.x-0175C2?style=for-the-badge&logo=dart)](https://dart.dev)
-[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/index.html)
+# 🚀 TaskNotate
 
 <p align="center">
-  <img src="https://via.placeholder.com/250x500.png?text=Home+Screen" alt="Home Screen" hspace="10">
-  <img src="https://via.placeholder.com/250x500.png?text=Task+Details" alt="Task Details" hspace="10">
-  <img src="https://via.placeholder.com/250x500.png?text=Notes+Screen" alt="Notes Screen" hspace="10">
+  <img src="https://github.com/user-attachments/assets/c1ea1b69-76ea-4e86-9a35-c5393a96cd78" alt="TaskNotate Logo" width="150">
 </p>
 
-> **Note:** Replace the placeholder image URLs above with direct links to your actual app screenshots to showcase its beautiful UI.
+<p align="center"><em>Your ultimate productivity companion with beautiful theme customization and powerful task reminders ⏰📝</em></p>
+
+<div align="center">
+
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?style=for-the-badge&logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart)
+![GetX](https://img.shields.io/badge/GetX-State%20Management-orange?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-Embedded%20DB-003B57?style=for-the-badge&logo=sqlite)
+![Local Notifications](https://img.shields.io/badge/Notifications-Local-blueviolet?style=for-the-badge&logo=bell)
+![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-green?style=for-the-badge)
+![Kotlin](https://img.shields.io/badge/Kotlin-Android%20Native-7F52FF?style=for-the-badge&logo=kotlin)
+
+</div>
 
 ---
 
-## ✨ Core Features
+## 🎨 Theme Showcase
 
-TaskNotate is packed with features designed to keep you organized and on track.
+### 🌈 Default Theme
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2c93d080-c4d7-4c56-9634-e00ca499894f" width="200">
+  <img src="https://github.com/user-attachments/assets/bf83d76b-938c-4f65-9143-7d7159069337" width="200">
+  <img src="https://github.com/user-attachments/assets/aa6804c6-f52f-4f94-9671-1ec1395f2195" width="200">
+  <img src="https://github.com/user-attachments/assets/424a0979-e330-4cae-b7ea-f02fdc9459c3" width="200">
+</p>
 
-#### General Features
-*   **☀️ Powerful Offline Notifications**: Stay on top of your schedule with precise, scheduled reminders for tasks and daily summaries that work perfectly without an internet connection.
-*   **🎨 Customizable Colors**: Personalize your app experience with a selection of vibrant color themes to match your style.
-*   **🌐 Multi-Language Support**: Productivity for everyone! The app is fully localized in **English, Arabic, Spanish, German, and Chinese**.
-
----
-
-### ✅ Advanced Task Management
-
-Take full control of your projects and to-do lists.
-
-*   **Priority Levels**: Assign priorities to tasks to focus on what matters most.
-*   **Status Tracking**: Easily track task status (e.g., *To Do*, *In Progress*, *Done*).
-*   **Subtasks**: Break down complex tasks into smaller, manageable subtasks for detailed planning.
-*   **Date & Deadlines**: Define start and finish dates for every task.
-*   **Reminders**: Set specific reminders to never miss a deadline.
-*   **Progress Timeline**: Visualize your project's progress and upcoming deadlines with an intuitive timeline view.
-*   **Rich Details**: Add detailed descriptions and attach images to your tasks for complete context.
-*   **Categorization**: Organize tasks into custom categories for a clutter-free view.
+### 📱 Additional Screens
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fcf52824-5c8a-44a8-aa89-e18965c942b8" width="200">
+  <img src="https://github.com/user-attachments/assets/308f7161-9d8f-44d8-9043-f1041d4a7b4c" width="200">
+  <img src="https://github.com/user-attachments/assets/d9b499b4-6892-42c4-beb1-4744cd569459" width="200">
+  <img src="https://github.com/user-attachments/assets/12cd8a00-601a-4d55-a7a8-0fe83dd9e052" width="200">
+  <img src="https://github.com/user-attachments/assets/63be5816-b264-44ff-83ac-93909f3e8612" width="200">
+  <img src="https://github.com/user-attachments/assets/9d8381e8-c85c-4cd2-b1d7-e1c9f636f5a1" width="200">
+  <img src="https://github.com/user-attachments/assets/8ffe1e63-6ad0-4d41-bb0c-2bdbd34a483c" width="200">
+  <img src="https://github.com/user-attachments/assets/cebc6f2b-7c7d-4b7c-a221-6efa81d24d90" width="200">
+</p>
 
 ---
 
-### 📝 Elegant Note-Taking
+## ✨ Features
 
-Inspired by the sleek design of Samsung Notes, the note-taking module is both powerful and beautiful.
+### ✅ Task Management
+- 📝 Create, edit, and delete tasks with ease.
+- 🗂 Sort tasks by due date, priority, or title.
+- 📆 View tasks in a beautiful Timeline & Calendar.
 
-*   **Rich Text Editing**: Enjoy a full suite of formatting options to style your notes exactly how you want.
-*   **Organized by Category**: Assign notes to categories to keep your thoughts structured and easy to find.
-*   **Fluid Interface**: A clean, distraction-free environment for capturing ideas.
+### 🔔 Powerful Local Notifications
+- Uses `flutter_local_notifications` for robust scheduling.
+- ⏰ Schedule alarms that trigger at the exact time, even when the app is closed.
+- 🔒 Works in the background and displays over the locked screen for maximum visibility.
+- 💤 Persistent alarm screen that requires user interaction to be dismissed.
 
----
+### 🎨 Rich Themes & UI
+- 🎨 Choose from 20+ beautiful color themes to personalize your experience.
+- 🌙 Automatic system-based Light/Dark mode switching.
+- 🌐 Multi-language support: English, العربية, Español, Deutsch, 中文.
 
-## 🛠️ Technology Stack
-
-TaskNotate is built with a modern, efficient, and reliable tech stack.
-
-*   **Framework**: **[Flutter](https://flutter.dev/)** & **[Dart](https://dart.dev/)** for a high-performance, cross-platform experience on both iOS and Android.
-*   **Local Database**: **[SQLite](https://www.sqlite.org/index.html)** via the `sqflite` package, ensuring all your data is stored securely and available offline.
-*   **State Management**: **[GetX](https://pub.dev/packages/get)** for reactive state management, dependency injection, and simplified navigation.
-*   **Notifications & Alarms**:
-    *   **[awesome_notifications](https://pub.dev/packages/awesome_notifications)**: For creating rich, customizable, and high-quality local notifications.
-    *   **[alarm](https://pub.dev/packages/alarm)**: For reliably scheduling and managing alarms to trigger notifications, even when the app is in the background or terminated.
-
----
-
-## 🚀 Future Enhancements
-
-The vision for TaskNotate is to keep growing. Planned features include:
-*   **Cloud Sync & Backup**: Securely back up your data and sync it across multiple devices.
-*   **Collaboration Features**: Share projects and tasks with other users.
-*   **Calendar Integration**: View your tasks and deadlines directly in your device's calendar.
-*   **Advanced Reporting**: Get insights into your productivity with detailed reports and analytics.
+### 🖌 Notes & Drawing
+- ✍️ Take handwritten notes or sketch ideas using a built-in canvas.
+- 📁 Notes are auto-saved locally, so you never lose your work.
+- 🧼 A clean, minimal, and intuitive layout for a distraction-free experience.
 
 ---
 
-## 🔧 Setup & Installation
+## 🧱 Tech Stack
 
-1.  **Clone the Repository**:
-    ```bash
-    git clone https://github.com/Ahmaddoolt/tasknotate.git
-    cd tasknotate
-    ```
-2.  **Install Dependencies**:
-    ```bash
-    flutter pub get
-    ```
-3.  **Run the App**:
-    ```bash
-    flutter run
-    ```
+| 🔧 Component        | 🚀 Technology                   |
+|---------------------|-------------------------------|
+| Framework           | Flutter 3.x                   |
+| Architecture        | Clean + MVC                   |
+| State Management    | GetX                          |
+| Local Database      | SQLite                        |
+| Alarm Scheduling    | `package:alarm` + `LocalNotifications` |
+| Platform Integration| Kotlin (for Android Native UI) |
+| Drawing Engine      | Flutter CustomPaint API       |
+
+---
+
+## 🔔 Alarm System Overview
+
+TaskNotate integrates precise local alarms with a custom native Android UI for a seamless and reliable reminder experience. The system is designed to wake the device and show a full-screen alert, ensuring you never miss an important task.
+
+```mermaid
+graph TD
+    A[Alarm Plugin] --> B[Kotlin Native Handler]
+    B --> C[MethodChannel Bridge]
+    C --> D[Flutter AlarmService]
+    D --> E[Alarm State Controller]
+    E --> F[Alarm UI Screen]
+
+📌 Key Features
+🔓 Wakes the device and shows the alarm over the lock screen.
+🔄 Reliably triggers alarms even after the device reboots.
+🔕 Supports both manual and automatic dismissal.
+📡 Built on top of the powerful flutter_local_notifications package.
+
+🧩 Sample Code
+📱 Native Android (Kotlin)
+This code ensures the alarm screen appears even when the device is locked.
+
+// In MainActivity.kt or a dedicated AlarmActivity.kt
+override fun onCreate(savedInstanceState: Bundle?) {
+    // Check if the activity was launched by an alarm trigger
+    if (intent?.action == "com.megoabkm.tasknotate.ALARM_TRIGGER") {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+            setShowWhenLocked(true)
+            setTurnScreenOn(true)
+        } else {
+            // For older Android versions
+            window.addFlags(
+                WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON or
+                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON or
+                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
+            )
+        }
+    }
+    super.onCreate(savedInstanceState)
+}
+
+🔁 Flutter Integration
+This is how Flutter listens for and handles the alarm event.
+
+// Part of the alarm handling service in Flutter
+void _handleAlarmTrigger(AlarmSettings settings) async {
+  // Notify the app that an alarm screen is active
+  await AlarmDisplayStateService.to.setAlarmScreenActive(true);
+
+  // Navigate to the full-screen alarm page
+  Get.offAllNamed(AppRoute.alarmScreen, arguments: {
+    'id': settings.id,
+    'title': 'Task Reminder' // Or the actual task title
+  });
+}
+
+// To stop the alarm and dismiss the screen
+Future<void> stopAlarm(int alarmId) async {
+  await Alarm.stop(alarmId);
+  await AlarmDisplayStateService.to.setAlarmScreenActive(false);
+}
+
+🧪 Try It Out
+Clone the repository
+git clone https://github.com/MegoABKM/TaskNotate.git
+
+Navigate into the project directory
+cd TaskNotate
+
+Install dependencies and run the app
+flutter pub get
+flutter run
+
+❤️ Support & License
+<img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
+Built with love using Flutter 💙
+
