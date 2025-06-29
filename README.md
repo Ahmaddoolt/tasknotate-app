@@ -130,6 +130,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 }
 
+---
+
 ### 🔁 Flutter Integration
 This is how Flutter listens for and handles the alarm event.
 
