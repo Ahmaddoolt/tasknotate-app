@@ -4,7 +4,7 @@
   <img src="https://github.com/user-attachments/assets/c1ea1b69-76ea-4e86-9a35-c5393a96cd78" alt="TaskNotate Logo" width="150">
 </p>
 
-<p align="center"><em>Your ultimate productivity companion with beautiful theme customization and powerful task reminders ⏰📝</em></p>
+<p align="center"><em>Your ultimate productivity companion — customizable, powerful, and beautifully designed ⏰📝</em></p>
 
 <div align="center">
 
@@ -20,9 +20,26 @@
 
 ---
 
-## 🎨 Theme Showcase
+## ✨ Features Overview
 
-### 🌈 Default Theme
+```mermaid
+graph TD
+    A[TaskNotate Features] --> B[🎯 Task Management]
+    A --> C[⏰ Local Notifications]
+    A --> D[🎨 Theme Customization]
+    A --> E[🖌 Drawing & Notes]
+    A --> F[🌍 Multi-language Support]
+    A --> G[📅 Calendar & Timeline View]
+    C --> H[Full-screen Alarm]
+    C --> I[Lock Screen Support]
+    C --> J[Reboot-resilient Scheduling]
+```
+
+---
+
+## 🌈 Theme Showcase
+
+### Default UI
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2c93d080-c4d7-4c56-9634-e00ca499894f" width="200">
   <img src="https://github.com/user-attachments/assets/bf83d76b-938c-4f65-9143-7d7159069337" width="200">
@@ -30,7 +47,7 @@
   <img src="https://github.com/user-attachments/assets/424a0979-e330-4cae-b7ea-f02fdc9459c3" width="200">
 </p>
 
-### 📱 Additional Screens
+### More Screens
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fcf52824-5c8a-44a8-aa89-e18965c942b8" width="200">
   <img src="https://github.com/user-attachments/assets/308f7161-9d8f-44d8-9043-f1041d4a7b4c" width="200">
@@ -38,88 +55,59 @@
   <img src="https://github.com/user-attachments/assets/12cd8a00-601a-4d55-a7a8-0fe83dd9e052" width="200">
   <img src="https://github.com/user-attachments/assets/63be5816-b264-44ff-83ac-93909f3e8612" width="200">
   <img src="https://github.com/user-attachments/assets/9d8381e8-c85c-4cd2-b1d7-e1c9f636f5a1" width="200">
-  <img src="https://github.com/user-attachments/assets/8ffe1e63-6ad0-4d41-bb0c-2bdbd34a483c" width="200">
-  <img src="https://github.com/user-attachments/assets/cebc6f2b-7c7d-4b7c-a221-6efa81d24d90" width="200">
 </p>
 
 ---
 
-## ✨ Features
+## 🧠 Why TaskNotate?
 
-### ✅ Task Management
-- 📝 Create, edit, and delete tasks with ease.
-- 🗂 Sort tasks by due date, priority, or title.
-- 📆 View tasks in a beautiful Timeline & Calendar.
+- 🚀 Clean & modular architecture (Clean + MVC)
+- ⏰ Intelligent task scheduling with alarm fallback
+- 🎨 Minimal UI designed for focus & clarity
+- 🌐 Multilingual UI (🇬🇧 🇸🇦 🇪🇸 🇩🇪 🇨🇳)
 
-### 🔔 Powerful Local Notifications
-- Uses `flutter_local_notifications` for robust scheduling.
-- ⏰ Schedule alarms that trigger at the exact time, even when the app is closed.
-- 🔒 Works in the background and displays over the locked screen for maximum visibility.
-- 💤 Persistent alarm screen that requires user interaction to be dismissed.
+---
 
-### 🎨 Rich Themes & UI
-- 🎨 Choose from 20+ beautiful color themes to personalize your experience.
-- 🌙 Automatic system-based Light/Dark mode switching.
-- 🌐 Multi-language support: English, العربية, Español, Deutsch, 中文.
+## 🔔 Alarm System: Behind the Scenes
 
-### 🖌 Notes & Drawing
-- ✍️ Take handwritten notes or sketch ideas using a built-in canvas.
-- 📁 Notes are auto-saved locally, so you never lose your work.
-- 🧼 A clean, minimal, and intuitive layout for a distraction-free experience.
+```mermaid
+graph TD
+    A[⏰ Alarm Trigger] --> B[Kotlin Alarm Handler]
+    B --> C[MethodChannel Bridge]
+    C --> D[Flutter Alarm Service]
+    D --> E[Alarm State Notifier]
+    E --> F[Alarm UI Screen]
+```
+
+> Full-screen persistent alarm with dismiss options and lock screen visibility.
 
 ---
 
 ## 🧱 Tech Stack
 
-| 🔧 Component        | 🚀 Technology                   |
-|---------------------|-------------------------------|
-| Framework           | Flutter 3.x                   |
-| Architecture        | Clean + MVC                   |
-| State Management    | GetX                          |
-| Local Database      | SQLite                        |
-| Alarm Scheduling    | `package:alarm` + `LocalNotifications` |
-| Platform Integration| Kotlin (for Android Native UI) |
-| Drawing Engine      | Flutter CustomPaint API       |
+| 🔧 Component         | 🚀 Technology                   |
+|----------------------|-------------------------------|
+| Framework            | Flutter 3.x                   |
+| Architecture         | Clean + MVC                   |
+| State Management     | GetX                          |
+| Local Storage        | SQLite                        |
+| Alarm Scheduling     | flutter_local_notifications + alarm |
+| Platform Integration | Kotlin                        |
+| Drawing Engine       | CustomPaint API               |
 
 ---
 
----
+## 🔁 Sample Code
 
-## 🔔 Alarm System Overview
-
-TaskNotate integrates precise local alarms with a custom native Android UI for a seamless and reliable reminder experience. The system is designed to wake the device and show a full-screen alert, ensuring you never miss an important task.
-
-graph TD
-    A[Alarm Plugin] --> B[Kotlin Handler]
-    B --> C[MethodChannel]
-    C --> D[Flutter AlarmService]
-    D --> E[Alarm State Controller]
-    E --> F[Alarm UI Screen]
-
-
-### 📌 Key Features
-- 🔓 Wakes the device and shows the alarm over the lock screen.
-- 🔄 Reliably triggers alarms even after the device reboots.
-- 🔕 Supports both manual and automatic dismissal.
-- 📡 Built on top of the powerful `flutter_local_notifications` package.
-
----
-
-## 🧩 Sample Code
-
-### 📱 Native Android (Kotlin)
-This code ensures the alarm screen appears even when the device is locked.
+### Kotlin — Alarm Activity
 
 ```kotlin
-// In MainActivity.kt or a dedicated AlarmActivity.kt
 override fun onCreate(savedInstanceState: Bundle?) {
-    // Check if the activity was launched by an alarm trigger
     if (intent?.action == "com.megoabkm.tasknotate.ALARM_TRIGGER") {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
             setShowWhenLocked(true)
             setTurnScreenOn(true)
         } else {
-            // For older Android versions
             window.addFlags(
                 WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON or
                 WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON or
@@ -129,59 +117,47 @@ override fun onCreate(savedInstanceState: Bundle?) {
     }
     super.onCreate(savedInstanceState)
 }
+```
 
----
-
-### 🔁 Flutter Integration
-This is how Flutter listens for and handles the alarm event.
+### Dart — Alarm Handler
 
 ```dart
-// Part of the alarm handling service in Flutter
 void _handleAlarmTrigger(AlarmSettings settings) async {
-  // Notify the app that an alarm screen is active
   await AlarmDisplayStateService.to.setAlarmScreenActive(true);
-
-  // Navigate to the full-screen alarm page
   Get.offAllNamed(AppRoute.alarmScreen, arguments: {
     'id': settings.id,
-    'title': 'Task Reminder' // Or the actual task title
+    'title': 'Task Reminder',
   });
 }
 
-// To stop the alarm and dismiss the screen
 Future<void> stopAlarm(int alarmId) async {
   await Alarm.stop(alarmId);
   await AlarmDisplayStateService.to.setAlarmScreenActive(false);
 }
+```
 
 ---
 
-## 🧪 Try It Out
+## 🧪 Try It Now
 
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/MegoABKM/TaskNotate.git
-    ```
-
-2.  **Navigate into the project directory**
-    ```bash
-    cd TaskNotate
-    ```
-
-3.  **Install dependencies and run the app**
-    ```bash
-    flutter pub get
-    flutter run
-    ```
+```bash
+git clone https://github.com/MegoABKM/TaskNotate.git
+cd TaskNotate
+flutter pub get
+flutter run
+```
 
 ---
 
-## ❤️ Support & License
+## 🤝 Contribute
 
-<div align="center">
-  <a href="https://github.com/MegoABKM/TaskNotate/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge"></a>
-  <a href="https://github.com/MegoABKM/TaskNotate/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge"></a>
-</div>
+<p align="center">
+  <a href="https://github.com/MegoABKM/TaskNotate/pulls">
+    <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge">
+  </a>
+  <a href="https://github.com/MegoABKM/TaskNotate/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
+  </a>
+</p>
 
-> Built with love using Flutter 💙  
-> Contributions, issues, and feature requests are welcome!
+> Made with 💙 using Flutter — Help us make it even better!
